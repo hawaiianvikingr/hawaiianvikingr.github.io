@@ -8,7 +8,9 @@
     <![CDATA[
       <script src="//plus.google.com/hangouts/_/api/v1/hangout.js"></script>
       <!-- Your application code -->
+      <htmL>
       Hello World!
+      </html>
     ]]>
   </Content>
 </Module>
