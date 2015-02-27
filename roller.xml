@@ -1,0 +1,1159 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+  <ModulePrefs title="Your App Name">
+    <Require feature="rpc"/>
+    <Require feature="views"/>
+  </ModulePrefs>
+  <Content type="html">
+    <![CDATA[
+      <script src="//plus.google.com/hangouts/_/api/v1/hangout.js"></script>
+      
+      <!-- Application code -->
+          
+      
+          <!-- https://plus.google.com/hangouts/_?gid=840171111972 -->
+            <!-- Including css directly because of lack of https server -->
+          
+      
+          
+          </head><body dir="ltr"><script src="//plus.google.com/hangouts/_/api/v1/hangout.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+              <title>Fate Roller</title>
+      
+              <div class="main">
+                  <div class="header">
+                      <img class="title" src="data:image/png;base64,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">
+                      <div class="info">
+                          <a href="https://plus.google.com/114067857890001381100" target="_blank" title="Visit Fate Roller on Google+">
+                              <img class="info_icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2RpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDozQ0IwREYyNzA2RURFMjExQjUyNkM1QjlFRDk4MTYwMyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozOERDM0JGQkVEMDYxMUUyQTQ3OUY4RDRCRENDNDI5NyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozOERDM0JGQUVEMDYxMUUyQTQ3OUY4RDRCRENDNDI5NyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IFdpbmRvd3MiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDozQ0IwREYyNzA2RURFMjExQjUyNkM1QjlFRDk4MTYwMyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDozQ0IwREYyNzA2RURFMjExQjUyNkM1QjlFRDk4MTYwMyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PmaE/RsAAATMSURBVHja7FdZTKNVGL1/W1poYaCEsrSyRBbZlATEBrCAEIJsAtEXQiANmmhMzDRqFKLRURMlMWoiD5PRp2FHFkVIgAQIkRBTwAEUsJAWpwQoARqWQqHSxXMJTJhOp3UcyDw4N7n8f+9t7/2Wc873wdhsNvIoB4s84vHYAI79QkVFBSkoKCjLz8/PMpvNViw9LEgY+mdsbEzZ0dFxE8Ny1y4F4flZV1eXe3h4aLJd8Dg+Pra1traW2993TwQKCwtfdHd359L3zc3Nv9bX18eNRqPO29ubOTg4sFmtVnIaFSsdiJIlLi6u0sfHR3x2hk6n+3V5eVkZGRmZ6uvr+9xJqDkckp2d/Txem5ymAMNtZWXl9/Hx8Q9hwHxwcHDI9va2Du8qeEFYLBbx8PAge3t7DAwVpKamfuLl5SU6fwAM7VlaWvoCl9ecGUDH3xguMTA4OPjN3NycIjk5OUsul0/weDwhXVepVJ0tLS1lOPwYk1tZWXkzKSnpJS6Xy7/HAzc3XkBAADWW98As0Gq1misYxcXFP5xdTkd0dPTLmZmZn1MnqCddXV01FovFIUBxMZdhGGqIm51hXJcRgEckKipKKhAIvO330tPTFQsLCzc2NjbUq6urt6emptqRAjlyPoXDl5ESBsBikLI/9Ho9BQlNW5+/v//x2toaF7+bEYlEzg1AzklQUJCXI8/YbDYnNja2eH9//6vQ0FCCi37BshyGfIq0/OTn53fiwNbWFgGOyPz8fMPMzExDTEwMmZycJNQomUzm3AC1Wk0Q2jV46zBnuCQFrCDwil62R9dgjEyj0ViPjo4YrLGQQVVISMifAGAMtp/a3d21IlJspFeLz7ecGkBzB+rNwMtNT09Pkf0+1sSUv4uLi0QikYTSNdDwbTrP0bC2vb29Bml8LTc39846IvMdHq87BSHlKyhmmJ6ebnQUAZPJpKdPRIkgHa84+g4MNCEaBPMu2gG7Ry5ZIBQKCcBE+vv7a5Ezrf3+6OjoDQCQ5OTkvB8eHp5yHwPMNJJUpx6Yhnw+n4KQislGc3OzDEDqgierANwstPxVpVLZm5eXVw3FrL3foQCrJCUl5RkAOshlobBvSGZnZ6sNBoMAFzViT4NQmyMiIviQXOPw8DApLS29Bu8//i9VCVT8ViwWX3UKQoRfHB8f/5ZUKv0AQNRhrtfX179AUwMhupKVlVV9qf0A9fhUzRjQSQzd9wWa9yi3R0ZGDsD53ks1wE49KSjDYJQUKkZRbGlqaiqHEdcvrSGBkHic0s0IIGogOlrQLRKflaiIFGCmgYGBN2GQClj4GpFiP1S3Yg/Czs7OQug3g9z/Bk3wQR/wBC3JePLb2tp+3tnZuR0WFkYoFQHOsqqqqkZQjnVhIOzr6+vNyMgoLSoq6obsJsLjO4crFIpr3d3dVyGtDaiUZGJioiUwMDAcLdxnF4YB1Pn30Bd2oZ4/e/7yUxkWlpeX16elpX2J9JwUHjQu16EThgszAGF90tWPEhIS3kVxeYd2R1A7PaR77d9cZt8fODQAHdEgRMflYdCDj1ARARMOH9ohcfV92kuiM77lkgVDQ0M/IvdvJCYmPu2sJQclD1ANaYVzQwS+B1ucsgFtnrqnp6eppKTEOQse/2v2vzPgHwEGACB9tvml2j4sAAAAAElFTkSuQmCC">
+                          </a>
+                      </div>
+                  </div>
+      
+                  <div class="content">
+                      <div class="content_left" id="fateroller_ladder" name="fateroller_ladder">
+                      </div>
+      
+                      <div class="content_right">
+                          <div class="heading" style="margin-top:2px" title="An alias replaces the player&#39;s name for a result.  It can be used to specify who or what is making the roll.">Player Alias</div>
+                          <input class="controls_text" id="fateroller_message_alias" maxlength="40" name="fateroller_message_alias" placeholder="Enter an optional alias here">
+      
+                          <div class="heading" title="The description is listed with the result.  It can be used to add flavour text or indicate what the roll is for.">Roll Description <span class="description_clear" onclick="fateRoller.clearDescription();" title="Click here to clear the current description.">&#10006;</span></div>
+                          <input class="controls_text" id="fateroller_description" maxlength="36" name="fateroller_description" placeholder="Enter an optional description here">
+      
+                          <div class="heading" title="The colour specifies how your dice appear and can distinguish your rolls from those of other players.">Dice Colour</div>
+                          <div class="colours" id="fateroller_colours" name="fateroller_colours"></div>
+      
+                          <div class="heading" style="margin-top:6px" title="">Settings</div>
+                          <div class="settings" id="fateroller_settings" name="fateroller_settings"></div>
+                      </div>
+                  </div>
+      
+                  <div class="content_results">
+                      <div class="messages" id="fateroller_messages" name="fateroller_messages">
+                      </div>
+                  </div>
+              </div>
+      
+              <script language="javascript" type="text/javascript">
+              function FateRoller() {
+                  console.log("FateRoller :: Start");
+      
+                  // Bind the object to the API callback.
+                  gapi.hangout.onApiReady.add(this.onApiReady.bind(this));
+              }
+      
+      
+              // Adds a result.
+              FateRoller.prototype.addResult = function(in_pid, in_username, in_alias, in_description, in_value, in_roll) {
+                  // Get the ladder div.
+                  var ladder = document.getElementById("fateroller_messages");
+      
+                  // Get the local participant.
+                  var participant = gapi.hangout.getLocalParticipant();
+      
+                  // Determine the local pid.
+                  var local_pid = participant.person.id;
+      
+                  // Set up some variable to store the colours.
+                  var colour = "000000";
+                  var colour_symbol = "FFFFFF";
+      
+                  // If this is the local user...
+                  if (in_pid == local_pid)
+                  {
+                      // Use the local colour.
+                      colour = this.colour_lookup[local_pid];
+                  }
+                  else
+                  {
+                      // Otherwise, if this is another user, get the colour data from the shared state.
+                      var shared_data = gapi.hangout.data.getValue("clr_" + in_pid);
+      
+                      // If there's valid shared data...
+                      if (shared_data)
+                      {
+                          // Parse out the message data.
+                          var data = JSON.parse(shared_data);
+      
+                          // Set the appropriate colour.
+                          colour = data.value ? data.value : colour;
+                      }
+                  }
+      
+                  // If there's no valid colour...
+                  if (!colour)
+                  {
+                      // Set the colour to black.
+                      colour = "000000";
+                  }
+      
+                  // Get the colour values as integers.
+                  var colour_red = parseInt(colour.charAt(0) + colour.charAt(1), 16);
+                  var colour_green = parseInt(colour.charAt(2) + colour.charAt(3), 16);
+                  var colour_blue = parseInt(colour.charAt(4) + colour.charAt(5), 16);
+      
+                  // Calculate the total colour.
+                  var colour_total = colour_red + colour_green + colour_blue;
+      
+                  // If the colour is very bright...
+                  if (colour_total >= 512)
+                  {
+                      // Set the symbol colour to black.
+                      colour_symbol = "000000";
+                  }
+      
+                  // Set up a variable to store the new html.
+                  var html = "";
+      
+                  // Get the username.
+                  var username = participant.person.displayName;
+      
+                  // Determine the display class.
+                  var display_class = (in_username == username) ? "result_entry_user" : "result_entry";
+      
+                  // Determine the current date.
+                  var date = new Date();
+      
+                  // Set the content display.
+                  var display_content = "";
+      
+                  // Set up some variables for the various values.
+                  var die_html = "&nbsp;";
+                  var fudge_display = "&nbsp;";
+                  var fudge_roll = 0;
+      
+                  // Iterate through the four fudge dice...
+                  for (var i = 0; i < 4; i++)
+                  {
+                      // Get the fudge die result (plus, minus, or blank).
+                      var fudge_die = in_roll.charAt(i);
+      
+                      // Switch based on the result...
+                      switch (fudge_die)
+                      {
+                          // If this is a plus die...
+                          case "+":
+                              // Set the die html.
+                              die_html = "<span class = \"die_plus\" style = \"color:#" + colour_symbol + "\" title = \"Positive Result\">+</span>";
+      
+                              // Increment the roll by one.
+                              fudge_roll++;
+      
+                              // Then break out...
+                              break;
+      
+      
+                          // If this is a minus die...
+                          case "-":
+                              // Set the die html.
+                              die_html = "<span class = \"die_minus\" style = \"color:#" + colour_symbol + "\" title = \"Negative Result\">&#8211;</span>";
+      
+                              // Decrement the roll by one.
+                              fudge_roll--;
+      
+                              // Then break out...
+                              break;
+      
+      
+                          // In all other cases...
+                          default:
+                              // Set the die html.
+                              die_html = "<span class = \"die_blank\" style = \"color:#" + colour_symbol + "\" title = \"Blank Result\">&nbsp;</span>";
+                      }
+      
+                      // Determine the element class.
+                      var die_class = this.animations_enabled ? "result_die_start" : "result_die";
+      
+                      // Append the appropriate html to the display content.
+                      display_content += "<div class = \"" + die_class + "\" id = \"result_" + this.result_index + "_die_" + i + "\" name = \"result_" + this.result_index + "_die_" + i + "\" style = \"background-color:#" + colour + ";border-color:" + colour + ";\">" + die_html + "</div>";
+                  }
+      
+                  // Determine the limits of the descriptor values.
+                  var max_value = this.descriptor.length - 1;
+                  var min_value = this.descriptor_offset;
+      
+                  // Ensure the value lies within the appropriate bounds.
+                  in_value = (in_value <= max_value + min_value) ? in_value : max_value + min_value;
+                  in_value = (in_value >= min_value) ? in_value : min_value;
+      
+                  // Determine the descriptor to display.
+                  var display_value = this.descriptor[in_value - min_value] + " (" + (in_value >= 0 ? "+" : "") + in_value + ")";
+      
+                  // Ensure the value lies within the appropriate bounds.
+                  var fudge_result = in_value + fudge_roll;
+                  var fudge_display = fudge_result;
+      
+                  // Ensure the value lies within the appropriate bounds.
+                  fudge_display = (fudge_display <= max_value + min_value) ? fudge_display : max_value + min_value;
+                  fudge_display = (fudge_display >= min_value) ? fudge_display : min_value;
+      
+                  // Determine the display result.
+                  var display_result = this.descriptor[fudge_display - min_value] + " (" + (fudge_result >= 0 ? "+" : "") + fudge_result + ")";
+      
+                  // Determine the name to display.
+                  var display_name = (in_alias != "") ? ("\"" + in_alias + "\"") : in_username;
+      
+                  // Determine the description text.
+                  var display_description = (in_description != "") ? in_description : "Rolls the dice";
+      
+                  // Determine the element class.
+                  var total_class = this.animations_enabled ? "result_total_start" : "result_total";
+      
+                  // Add the result to the html.
+                  html += "<div class = \"result\" id = \"result_entry_" + this.result_index + "\">";
+                  html += "    <div class = \"result_entry\">";
+                  html += "        <div class = \"result_heading" + ((in_alias != "") ? "_alias" : "") + "\" title = \"" + in_username + "\">";
+                  html += "            <span class = \"result_name\">" + display_name + "</span>";
+                  html += "            <span class = \"result_remove\" id = \"result_entry_" + this.result_index + "_remove\" onclick = \"fateRoller.removeResult('result_entry_" + this.result_index + "');\" title = \"Remove this result\">&#10006;</span>";
+                  html += "        </div>";
+                  html += "        <div class = \"result_information\"><span class = \"result_description\" title = \"" + display_description + "\">" + display_description + "</span><span class = \"result_at\">@</span><span class = \"result_value\" title = \"" + display_value + "\">" + display_value + "</span></div>";
+                  html += "        <div class = \"result_dice\">";
+                  html += "            <div class = \"" + total_class + "\" id = \"result_" + this.result_index + "_total\"><span class = \"result_total\" style = \"border-color:#" + colour + "\" title = \"" + display_result + "\">" + display_result + "</span></div>";
+                  html += "            " + display_content;
+                  html += "        </div>";
+                  html += "    </div>";
+                  html += "</div>";
+      
+                  // Append the previous html.
+                  html += ladder.innerHTML;
+      
+                  // Set the new html.
+                  ladder.innerHTML = html;
+      
+                  // Get the message element by its id.
+                  var message_element = document.getElementById("result_entry_" + this.result_index);
+      
+                  // If there's a valid element...
+                  if (message_element)
+                  {
+                      // If this is animated...
+                      if (this.animations_enabled)
+                      {
+                          // Iterate through the dice...
+                          for (var i = 0; i < 4; i++)
+                          {
+                              // Animate the dice coming in.
+                              setTimeout("fateRoller.onAnimation(\"result_" + this.result_index + "_die_" + i + "\", \"result_die\");", i * this.animation_time);
+                          }
+      
+                          // Ensure the total is animated.
+                          message_element.timeout_result = setTimeout("fateRoller.onAnimation(\"result_" + this.result_index + "_total\", \"result_total\");", this.animation_time * 5);
+                      }
+                  }
+      
+                  // Increment the result count.
+                  this.result_count++;
+      
+                  // Increment the result index.
+                  this.result_index++;
+              };
+      
+      
+              // Add a new setting.
+              FateRoller.prototype.addSetting = function(in_name, in_title, in_variable, in_enabled) {
+                  // Determine the id string to use for the setting.
+                  var id_string = "fateroller_setting_" + this.settings_count;
+      
+                  // Get the settings element.
+                  var settings_element = document.getElementById("fateroller_settings");
+      
+                  // If there's no settings element, exit out...
+                  if (!settings_element)
+                  {
+                      return;
+                  }
+      
+                  // Get the current html.
+                  var html = settings_element.innerHTML;
+      
+                  // Determine the tick text.
+                  var tick_text = in_enabled ? "&#10004;" : "&nbsp;";
+      
+                  // Append the html.
+                  html += "<div class = \"settings_entry\" title = \"" + in_title + "\">";
+                  html += "<span class = \"settings_icon\" id = \"" + id_string + "\" onclick = \"fateRoller.onSettingPressed('" + id_string + "', '" + in_variable + "');\">" + tick_text + "</span>";
+                  html += "<span class = \"settings_text\">" + in_name + "</span>";
+                  html += "</div>";
+      
+                  // Set the new html.
+                  settings_element.innerHTML = html;
+      
+                  // Increment the settings count.
+                  this.settings_count++;
+              };
+      
+      
+              // Clear the current description.
+              FateRoller.prototype.clearDescription = function() {
+                  // Get the description element.
+                  var description_element = document.getElementById("fateroller_description");
+      
+                  // If there's a valid element...
+                  if (description_element)
+                  {
+                      // Clear the description text.
+                      description_element.value = "";
+                  }
+              }
+      
+      
+              // Clear the current history.
+              FateRoller.prototype.clearHistory = function() {
+                  // If sounds are enabled...
+                  if (this.sounds_enabled)
+                  {
+                      // Play the sound effect.
+                      this.sound_click.play({ localOnly: true, loop:false });
+                  }
+      
+                  // Echo a message to the console.
+                  console.log("FateRoller :: Clear");
+      
+                  // Iterate through each of the results in the messages div...
+                  $("#fateroller_messages").children(".result").each(function() {
+                      // Remove each result.
+                      fateRoller.removeResult(this.id);
+                  });
+      
+              }
+      
+      
+              // Initialize the object.
+              FateRoller.prototype.initialize = function() {
+                  // Register some callbacks.
+                  gapi.hangout.data.onStateChanged.add(this.onUpdate.bind(this));
+      
+                  // Store the document location.
+                  this.start = "http://members.iinet.net.au/~0738908969@supernerd.com.au/fateroller";
+      
+                  // Set the message timeout.
+                  this.message_timeout = 3000;
+      
+                  // Set the animation base time.
+                  this.animation_time = 500;
+      
+                  // Set up a variable for storing the result count.
+                  this.result_count = 0;
+      
+                  // Register a variable for storing the result index.
+                  this.result_index = 0;
+      
+                  // Create the sounds.
+                  this.sound_click = gapi.hangout.av.effects.createAudioResource(this.start + "/fateroller.click.wav").createSound();
+                  this.sound_roll = gapi.hangout.av.effects.createAudioResource(this.start + "/fateroller.roll.wav").createSound();
+      
+                  // Initialize the alias.
+                  this.initializeAlias();
+      
+                  // Initialize the descriptors.
+                  this.initializeDescriptors();
+      
+                  // Initialize the colours.
+                  this.initializeColours();
+      
+                  // Initialize the settings.
+                  this.initializeSettings();
+              };
+      
+      
+              // Initialize the alias.
+              FateRoller.prototype.initializeAlias = function() {
+                  // Attempt to get the alias element by its id.
+                  var alias_element = document.getElementById("fateroller_message_alias");
+      
+                  // If there's no element, exit out...
+                  if (!alias_element)
+                  {
+                      return;
+                  }
+      
+                  // Set up a variable to store the alias.
+                  var alias = "";
+      
+                  // Get the local participant google+ id.
+                  var pid = gapi.hangout.getLocalParticipant().person.id;
+      
+                  // Attempt to get the user's last message.
+                  var shared_msg = gapi.hangout.data.getValue("msg_" + pid);
+      
+                  // If there's valid message...
+                  if (shared_msg)
+                  {
+                      // Parse out the message data.
+                      var data = JSON.parse(shared_msg);
+      
+                      // Set the appropriate alias.
+                      alias = data.alias ? data.alias : alias;
+                  }
+      
+                  // If there's no valid alias...
+                  if (!alias)
+                  {
+                      // Set the alias to empty.
+                      alias = "";
+                  }
+      
+                  // Set the element text.
+                  alias_element.value = alias;
+              };
+      
+      
+              // Initialize the colours.
+              FateRoller.prototype.initializeColours = function() {
+                  // Set up a variable to store the colour button state.
+                  this.colour_button = false;
+      
+                  // Create an object for looking up colours by id.
+                  this.colour_lookup = {};
+      
+                  // Create an array for looking up the colour highlights.
+                  this.highlight = new Array();
+      
+                  // Very light.
+                  this.highlight.push("FF8080");
+                  this.highlight.push("FFD080");
+                  this.highlight.push("FFFA80");
+                  this.highlight.push("FFFF80");
+                  this.highlight.push("FAFF80");
+                  this.highlight.push("D0FF80");
+                  this.highlight.push("80FF80");
+                  this.highlight.push("80FFD0");
+                  this.highlight.push("80FFFA");
+                  this.highlight.push("80FFFF");
+                  this.highlight.push("80FAFF");
+                  this.highlight.push("80D0FF");
+                  this.highlight.push("8080FF");
+                  this.highlight.push("D080FF");
+                  this.highlight.push("FA80FF");
+                  this.highlight.push("FF80FF");
+      
+                  // Light.
+                  this.highlight.push("FF4040");
+                  this.highlight.push("FFA040");
+                  this.highlight.push("FFF540");
+                  this.highlight.push("FFFF40");
+                  this.highlight.push("F5FF40");
+                  this.highlight.push("A0FF40");
+                  this.highlight.push("40FF40");
+                  this.highlight.push("40FFA0");
+                  this.highlight.push("40FFF5");
+                  this.highlight.push("40FFFF");
+                  this.highlight.push("40F5FF");
+                  this.highlight.push("40A0FF");
+                  this.highlight.push("4040FF");
+                  this.highlight.push("A040FF");
+                  this.highlight.push("F540FF");
+                  this.highlight.push("FF40FF");
+      
+                  // Middle.
+                  this.highlight.push("FF0000");
+                  this.highlight.push("FF8000");
+                  this.highlight.push("FFC000");
+                  this.highlight.push("FFFF00");
+                  this.highlight.push("C0FF00");
+                  this.highlight.push("80FF00");
+                  this.highlight.push("00FF00");
+                  this.highlight.push("00FF80");
+                  this.highlight.push("00FFC0");
+                  this.highlight.push("00FFFF");
+                  this.highlight.push("00C0FF");
+                  this.highlight.push("0080FF");
+                  this.highlight.push("0000FF");
+                  this.highlight.push("8000FF");
+                  this.highlight.push("C000FF");
+                  this.highlight.push("FF00FF");
+      
+                  // Dark.
+                  this.highlight.push("C00000");
+                  this.highlight.push("C04000");
+                  this.highlight.push("C08000");
+                  this.highlight.push("C0C000");
+                  this.highlight.push("80C000");
+                  this.highlight.push("40C000");
+                  this.highlight.push("00C000");
+                  this.highlight.push("00C040");
+                  this.highlight.push("00C080");
+                  this.highlight.push("00C0C0");
+                  this.highlight.push("0080C0");
+                  this.highlight.push("0040C0");
+                  this.highlight.push("0000C0");
+                  this.highlight.push("4000C0");
+                  this.highlight.push("8000C0");
+                  this.highlight.push("C000C0");
+      
+                  // Very dark.
+                  this.highlight.push("800000");
+                  this.highlight.push("801000");
+                  this.highlight.push("804000");
+                  this.highlight.push("808000");
+                  this.highlight.push("408000");
+                  this.highlight.push("108000");
+                  this.highlight.push("008000");
+                  this.highlight.push("008010");
+                  this.highlight.push("008040");
+                  this.highlight.push("008080");
+                  this.highlight.push("004080");
+                  this.highlight.push("001080");
+                  this.highlight.push("000080");
+                  this.highlight.push("100080");
+                  this.highlight.push("400080");
+                  this.highlight.push("800080");
+      
+                  // Greyscale.
+                  this.highlight.push("F0F0F0");
+                  this.highlight.push("E0E0E0");
+                  this.highlight.push("D0D0D0");
+                  this.highlight.push("C0C0C0");
+                  this.highlight.push("B0B0B0");
+                  this.highlight.push("A0A0A0");
+                  this.highlight.push("909090");
+                  this.highlight.push("808080");
+                  this.highlight.push("707070");
+                  this.highlight.push("606060");
+                  this.highlight.push("505050");
+                  this.highlight.push("404040");
+                  this.highlight.push("303030");
+                  this.highlight.push("202020");
+                  this.highlight.push("101010");
+                  this.highlight.push("000000");
+      
+                  // Get the container div.
+                  var container = document.getElementById("fateroller_colours");
+      
+                  // Get the current html.
+                  var html = container.innerHTML;
+      
+                  // Iterate through the highlight and add them to the container.
+                  for (var i = 0; i < this.highlight.length; i++)
+                  {
+                      // Get the id string.
+                      var id_string = "fateroller_colour_" + i;
+      
+                      // Append the new html.
+                      html += "<div class = \"colour_entry\" id = \"" + id_string + "\" name = \"" + id_string + "\"";
+                      html += "    onclick = \"fateRoller.onColourPressed('" + this.highlight[i] + "');\"";
+                      html += "    style = \"background-color:" + this.highlight[i] + ";\">&nbsp;";
+                      html += "</div>";
+                  }
+      
+                  // Set the new html.
+                  container.innerHTML = html;
+      
+                  // Get the local participant google+ id.
+                  var pid = gapi.hangout.getLocalParticipant().person.id;
+      
+                  // Set up a variable to store the colour.
+                  var colour = "000000";
+      
+                  // Get the colour data from the shared state.
+                  var shared_data = gapi.hangout.data.getValue("clr_" + pid);
+      
+                  // If there's valid shared data...
+                  if (shared_data)
+                  {
+                      // Parse out the message data.
+                      var data = JSON.parse(shared_data);
+      
+                      // Set the appropriate colour.
+                      colour = data.value ? data.value : colour;
+                  }
+      
+                  // If there's no valid colour...
+                  if (!colour)
+                  {
+                      // Set the colour to black.
+                      colour = "000000";
+                  }
+      
+                  // Set the colour.
+                  this.setColour(colour);
+              };
+      
+      
+              // Initialize the descriptors.
+              FateRoller.prototype.initializeDescriptors = function() {
+                  // Create an array for looking up the descriptor.
+                  this.descriptor = new Array();
+                  this.descriptor.push("Terrible");
+                  this.descriptor.push("Poor");
+                  this.descriptor.push("Mediocre");
+                  this.descriptor.push("Average");
+                  this.descriptor.push("Fair");
+                  this.descriptor.push("Good");
+                  this.descriptor.push("Great");
+                  this.descriptor.push("Superb");
+                  this.descriptor.push("Fantastic");
+                  this.descriptor.push("Epic");
+                  this.descriptor.push("Legendary");
+      
+                  // Set the descriptor offset and maximum.
+                  this.descriptor_offset = -2;
+      
+                  // Get the ladder div.
+                  var ladder = document.getElementById("fateroller_ladder");
+      
+                  // Get the current html.
+                  var html = ladder.innerHTML;
+      
+                  // Iterate through the descriptors and add them to the ladder.
+                  for (var i = this.descriptor.length - 1; i >= 0; i--)
+                  {
+                      // Calculate the roll value.
+                      var roll_value = i + this.descriptor_offset;
+      
+                      // Determine the text to display.
+                      var display = this.descriptor[i] + " (" + (roll_value >= 0 ? "+" : "") + roll_value + ")";
+      
+                      // Get the id string.
+                      var id_string = "fateroller_descriptor_" + this.descriptor[i].toLowerCase();
+      
+                      // Append the new html.
+                      html += "<input class = \"descriptor\"";
+                      html += "     id = \"" + id_string + "\"";;
+                      html += "     name = \"" + id_string + "\"";
+                      html += "    onclick = \"fateRoller.onDescriptorPressed(" + roll_value + ");\"";
+                      html += "     title = \"Make a roll at " + display + "\"";
+                      html += "     type = \"submit\"";
+                      html += "     value = \"" + display + "\" "
+                      html += "/>";
+                      html += "<br />";
+                  }
+      
+                  // Set the new html.
+                  ladder.innerHTML = html;
+              };
+      
+      
+              // Initialize the settings.
+              FateRoller.prototype.initializeSettings = function() {
+                  // Zero the settings count.
+                  this.settings_count = 0;
+      
+                  // Set the initial settings.
+                  this.animations_enabled = true;
+                  this.clear_enabled = false;
+                  this.sounds_enabled = true;
+      
+                  // Add the settings.
+                  this.addSetting("Animate Dice Rolling", "Check this box to enable animated dice rolling.", "fateRoller.animations_enabled", this.animations_enabled);
+                  //this.addSetting("Clear Descriptions", "Check this box if you want the description cleared after every roll.", "fateRoller.clear_enabled", this.clear_enabled);
+                  this.addSetting("Play Sound Effects", "Check this box to play sound effects.", "fateRoller.sounds_enabled", this.sounds_enabled);
+      
+                  // Get the settings element.
+                  var settings_element = document.getElementById("fateroller_settings");
+      
+                  // If there's no settings element, exit out...
+                  if (!settings_element)
+                  {
+                      return;
+                  }
+      
+                  // Get the current html.
+                  var html = settings_element.innerHTML;
+      
+                  // Add the clear history button.
+                  html += "<input class = \"button\"";
+                  html += "     id = \"fateroller_settings_clear\"";;
+                  html += "    onclick = \"fateRoller.clearHistory();\"";
+                  html += "     title = \"Clear the history of all results.\"";
+                  html += "     type = \"submit\"";
+                  html += "     value = \"Clear Result History\" "
+                  html += "/>";
+      
+                  // Set the new html.
+                  settings_element.innerHTML = html;
+              };
+      
+      
+              // Called when the animation is triggered.
+              FateRoller.prototype.onAnimation = function(in_element, in_class) {
+                  // Attempt to find the animation element.
+                  var animation_element = document.getElementById(in_element);
+      
+                  // If there's a valid element...
+                  if (animation_element)
+                  {
+                      // Set the new classname.
+                      animation_element.className = in_class;
+                  }
+              };
+      
+      
+              FateRoller.prototype.onApiReady = function(event) {
+                  if (event.isApiReady === true) {
+                      console.log("FateRoller :: API Ready");
+      
+                      // Initialize the roller.
+                      this.initialize();
+                  }
+              };
+      
+      
+              // Called when an colour is pressed.
+              FateRoller.prototype.onColourPressed = function(in_value) {
+                  // If the button has been pressed and we're waiting for networking, early out...
+                  if (this.colour_button)
+                  {
+                      return false;
+                  }
+      
+                  // Set the colour button flag.
+                  this.colour_button = true;
+      
+                  // Get the local participant.
+                  var participant = gapi.hangout.getLocalParticipant();
+      
+                  // Get the google+ id for the person.
+                  var pid = participant.person.id;
+      
+                  // Determine the message key.
+                  var key = "clr_" + pid;
+      
+                  // Get the milliseconds-based timestamp (used to prevent caching).
+                  var timestampMS = new Date().getTime();
+      
+                  // Stringify the message content.
+                  var message_content = JSON.stringify({
+                      "value": in_value,
+                      "timestamp": timestampMS
+                  });
+      
+                  // Create the message object.
+                  var message = {};
+      
+                  // Set the appropriate properties.
+                  message[key] = message_content;
+      
+                  // Send the message.
+                  gapi.hangout.data.submitDelta(message);
+      
+                  // Set the colour.
+                  this.setColour(in_value);
+      
+                  // If sounds are enabled...
+                  if (this.sounds_enabled)
+                  {
+                      // Play the sound effect.
+                      this.sound_click.play({ localOnly: true, loop:false });
+                  }
+      
+                  // Stop event bubbling.
+                  return false;
+              };
+      
+      
+              // Called when an descriptor button is pressed.
+              FateRoller.prototype.onDescriptorPressed = function(in_value) {
+                  // Disable the buttons.
+                  this.setButtonState(false);
+      
+                  // Set the initial result to nothing.
+                  var roll = "";
+      
+                  // Iterate through the four fudge dice...
+                  for (var i = 0; i < 4; i++)
+                  {
+                      // Get an integer between -1 and +1.
+                      var die = Math.floor(Math.random() * 3) - 1;
+      
+                      // Append the relevant value to the string.
+                      roll += (die > 0) ? "+" : ((die < 0) ? "-" : " ");
+                  }
+      
+                  // Get the local participant.
+                  var participant = gapi.hangout.getLocalParticipant();
+      
+                  // Set up a variable to store the username.
+                  var username = participant.person.displayName;
+      
+                  // Set up a variable to store the alias (if any).
+                  var alias = "";
+      
+                  // Get the alias element.
+                  var alias_element = document.getElementById("fateroller_message_alias");
+      
+                  // If there's a valid element...
+                  if (alias_element)
+                  {
+                      // Set the username to the alias.
+                      alias = alias_element.value ? alias_element.value : "";
+                  }
+      
+                  // Set up a variable to store the description.
+                  var description = "";
+      
+                  // Get the description element.
+                  var description_element = document.getElementById("fateroller_description");
+      
+                  // If there's a valid element...
+                  if (description_element)
+                  {
+                      // Set the description.
+                      description = description_element.value;
+      
+                      // If we're automatically clearing the description...
+                      if (this.clear_enabled)
+                      {
+                          // Clear the description text.
+                          description_element.value = "";
+                      }
+                  }
+      
+                  // Get the milliseconds-based timestamp (used to prevent caching).
+                  var timestampMS = new Date().getTime();
+      
+                  // Get the google+ id for the person.
+                  var pid = participant.person.id;
+      
+                  // Stringify the message content.
+                  var message_content = JSON.stringify({
+                      "alias": alias,
+                      "description": description,
+                      "value": in_value,
+                      "roll": roll,
+                      "timestamp": timestampMS,
+                      "username": username
+                  });
+      
+                  // Create the message object.
+                  var message = {};
+      
+                  // Determine the message key.
+                  var key = "msg_" + pid;
+      
+                  // Set the appropriate properties.
+                  message[key] = message_content;
+      
+                  // Send the message.
+                  gapi.hangout.data.submitDelta(message);
+      
+                  // Add the result.
+                  this.addResult(pid, username, alias, description, in_value, roll);
+      
+                  // If sounds are enabled...
+                  if (this.sounds_enabled)
+                  {
+                      // Play the sound effect.
+                      this.sound_roll.play({ localOnly: true, loop:false });
+                  }
+      
+                  // Stop event bubbling.
+                  return false;
+              };
+      
+      
+              // Called to fade out an element.
+              FateRoller.prototype.onFadeDelete = function(in_element) {
+                  // If there's no element, early out...
+                  if (!in_element)
+                  {
+                      return;
+                  }
+      
+                  // Get the element by its id.
+                  var element_id = document.getElementById(in_element);
+      
+                  // If there's no element, exit out...
+                  if (!element_id)
+                  {
+                      return;
+                  }
+      
+                  // If the element has a parent...
+                  if (element_id.parentNode)
+                  {
+                      // Remove the element from its parent.
+                      element_id.parentNode.removeChild(element_id);
+      
+                      // Decrement the result count (to zero).
+                      this.result_count = (this.result_count >= 1) ? (this.result_count - 1) : 0;
+                  }
+              };
+      
+      
+              // Called when a setting is clicked.
+              FateRoller.prototype.onSettingPressed = function(in_element, in_variable) {
+                  // Attempt to find the setting element.
+                  var setting_element = document.getElementById(in_element);
+      
+                  // If there's a valid element...
+                  if (setting_element)
+                  {
+                      // Get the current html.
+                      var html = setting_element.innerHTML;
+      
+                      // Toggle the variable.
+                      eval(in_variable + " = !" + in_variable + ";");
+      
+                      // Determine the new html.
+                      html = eval(in_variable) ? "&#10004;" : "&nbsp;";
+      
+                      // Set the new html.
+                      setting_element.innerHTML = html;
+      
+                      // If sounds are enabled...
+                      if (this.sounds_enabled)
+                      {
+                          // Play the sound effect.
+                          this.sound_click.play({ localOnly: true, loop:false });
+                      }
+                  }
+              };
+      
+      
+              // Called when the shared user state changes.
+              FateRoller.prototype.onUpdate = function(event) {
+                  // Get the local participant google+ id.
+                  var local_pid = gapi.hangout.getLocalParticipant().person.id;
+      
+                  // Iterate through any new added keys...
+                  for (var i = 0; i < event.addedKeys.length; ++i)
+                  {
+                      // Get the key.
+                      var key = event.addedKeys[i].key;
+      
+                      // If there aren't enough characters in the key, skip the rest...
+                      if (key.length < 4)
+                      {
+                          continue;
+                      }
+      
+                      // Determine the type of message being sent.
+                      var message_type = key.substring(0, 3);
+      
+                      // Get the pid from the key.
+                      var pid = key.substring(4);
+      
+                      // Switch based on the message type...
+                      switch (message_type)
+                      {
+                          // If this is a result message...
+                          case "msg":
+                              // Get the time difference from the entry.
+                              var timediff = event.addedKeys[i].timediff;
+      
+                              // If the time difference is too great, skip the rest...
+                              if (timediff > this.message_timeout)
+                              {
+                                  continue;
+                              }
+      
+                              // If this is an update to the local client...
+                              if (pid == local_pid)
+                              {
+                                  // Re-enable the buttons.
+                                  this.setButtonState(true);
+      
+                                  // Skip the rest.
+                                  continue;
+                              }
+      
+                              // Parse out the message data.
+                              var data = JSON.parse(event.addedKeys[i].value);
+      
+                              // Add the result.
+                              this.addResult(pid, data.username, data.alias, data.description, data.value, data.roll);
+      
+                              // If sounds are enabled...
+                              if (this.sounds_enabled)
+                              {
+                                  // Play the sound effect.
+                                  this.sound_roll.play({ localOnly: true, loop:false });
+                              }
+      
+                              // Then break out...
+                              break;
+      
+      
+                          // If this is a colour message...
+                          case "clr":
+                              // Parse out the message data.
+                              var data = JSON.parse(event.addedKeys[i].value);
+      
+                              // If this is an update to the local client...
+                              if (pid == local_pid)
+                              {
+                                  // Re-enable the buttons.
+                                  this.colour_button = false;
+      
+                                  // Set the colour.
+                                  this.setColour(data.value);
+      
+                                  // Skip the rest.
+                                  continue;
+                              }
+      
+                              // Store the resulting value.
+                              this.colour_lookup[pid] = data.value;
+      
+                              // Then break out...
+                              break;
+      
+      
+                          // In all other cases...
+                          default:
+                              // Do nothing.
+                      }
+                  }
+              };
+      
+      
+              // Called to remove a result.
+              FateRoller.prototype.removeResult = function(in_element) {
+                  // If there's no element, early out...
+                  if (!in_element)
+                  {
+                      return;
+                  }
+      
+                  // Attempt to get the remove element.
+                  var remove_id = document.getElementById(in_element + "_remove");
+      
+                  // If there's a remove element...
+                  if (remove_id)
+                  {
+                      // Hide the element.
+                      remove_id.style.display = "none";
+                  }
+      
+                  // Get the element by its id.
+                  var element_id = document.getElementById(in_element);
+      
+                  // If there's no element, exit out...
+                  if (!element_id)
+                  {
+                      return;
+                  }
+      
+                  // Ensure the total is animated.
+                  if (element_id.timeout_result)
+                  {
+                      // Clear the timeout.
+                      clearTimeout(element_id.timeout_result);
+      
+                      // Set the animation.
+                      this.onAnimation(in_element + "_total", "result_total");
+                  }
+      
+                  // Start fading out the element.
+                  this.onAnimation(in_element, "result_fade_out");
+      
+                  // Schedule the element to be deleted.
+                  element_id.timeout_FadeoutDelete = setTimeout("fateRoller.onFadeDelete(\"" + in_element + "\");", 500);
+              };
+      
+      
+              // Called to set the button state.
+              FateRoller.prototype.setButtonState = function(in_state) {
+                  // Iterate through the descriptors and add them to the ladder.
+                  for (var i = this.descriptor_count - 1; i >= 0; i--)
+                  {
+                      // Get the id string.
+                      var id_string = "fateroller_descriptor_" + this.descriptor[i].toLowerCase();
+      
+                      // Get the button element.
+                      var button_element = document.getElementById(id_string);
+      
+                      // If there's no button, skip the rest...
+                      if (!button_element)
+                      {
+                          continue;
+                      }
+      
+                      // Set the button's disabled state.
+                      button_element.disabled = !in_state;
+      
+                      // Set the appropriate class.
+                      button_element.className = in_state ? "descriptor" : "descriptor_disabled";
+                  }
+              };
+      
+      
+              // Called to set the local colour.
+              FateRoller.prototype.setColour = function(in_colour) {
+                  // Determine the local pid.
+                  var pid = gapi.hangout.getLocalParticipant().person.id;
+      
+                  // Store the resulting value.
+                  this.colour_lookup[pid] = in_colour;
+      
+                  // Iterate through the highlight and add them to the container.
+                  for (var i = 0; i < this.highlight.length; i++)
+                  {
+                      // Determine the colour.
+                      var colour = this.highlight[i];
+      
+                      // Set the html to the appropriate value.
+                      var html = (colour == in_colour) ? "&#9733;" : "&nbsp;";
+      
+                      // Get the id string.
+                      var id_string = "fateroller_colour_" + i;
+      
+                      // Get the element from its id string.
+                      var colour_element = document.getElementById(id_string);
+      
+                      // If there's no element, skip the rest...
+                      if (!colour_element)
+                      {
+                          continue;
+                      }
+      
+                      // Set the new html value.
+                      colour_element.innerHTML = html;
+                  }
+              };
+      
+      
+              // Create the fateroller.
+              var fateRoller = new FateRoller();
+      
+              // Create the google analytics object.
+              var _gaq = _gaq || [];
+      
+              // Push the data.
+              _gaq.push(
+                  ['_setAccount', 'UA-42452656-3'],
+                  ['_trackPageview']
+              );
+      
+              // Send it all.
+              (function() {
+                  var ga = document.createElement('script');
+                  ga.type = 'text/javascript';
+                  ga.async = true;
+                  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      
+                  var s = document.getElementsByTagName('script')[0];
+                  s.parentNode.insertBefore(ga, s);
+              })();
+              </script>
+      
+          
+          <!-- Application code -->
+          
+      <script>gadgets.util.runOnLoadHandlers();</script><script>window.google.csi.tickDl();
+      </script></body></html>
+      
+    ]]>
+  </Content>
+</Module>
