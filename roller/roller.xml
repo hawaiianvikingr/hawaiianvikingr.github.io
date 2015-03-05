@@ -81,7 +81,7 @@
                 +1
             </div>
             
-            <input class="button" id="plus2" name="+2" title="+2" type="submit"/>
+            <input class="button" id="plus2" name="+2" title="+2" type="submit" value="+2"/>
             
         </div>
         
