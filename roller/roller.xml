@@ -13,22 +13,26 @@
       <style type="text/css">
       
           #header {
-            background-color: blue;
-            height: 100px;
+            background-color: dark grey;
+            height: 50px;
+            font-family: monospace;
+            font-color: light grey;
+            font-size: 40px;
+            
           }
           
           #controls {
-            background-color: red;
+            background-color: grey;
             height: 200px;
           }
           
           #log {
-            background-color: yellow;
+            background-color: #eeeeee;
             height:300px;
           }
           
           .button{
-            background-color: grey;
+            background-color: light blue;
             height: 30px;
             width: 30px;
             font-family: sans-serif;
@@ -38,15 +42,24 @@
             border: 2px solid black;
             display: inline-block;
           }
+          
+          .entry {
+            height: 50px;
+            background-color: white;
+            font-family: sans-serif;
+            border: 2px solid grey;
+          }
       
       </style>
       
       <body>
       
+        //Contains title info for the extension
         <div id="header">
-            
+            roller
         </div>
         
+        //Contains the buttons and controls
         <div id="controls">
             <h3>Controls</h3>
             
@@ -68,15 +81,26 @@
                 +1
             </div>
             
-            <div class="button">
-                +2
-            </div>
+            <input class="button"; id="plus2"; name="+2"; title="+2"; type="submit"/>
             
         </div>
         
+        //Displays roll results and chat log?
         <div id="log">
             <h3>Log</h3>
         </div>
+      
+        <script language="javascript" type="text/javascript">
+        
+        //Wait for the gadget to load
+        gadgets.util.registerOnLoadHandler(init);
+        
+        // Function to initialize the extension
+        function init () {
+        
+        }
+        
+        </script>
       
       </body>
       
