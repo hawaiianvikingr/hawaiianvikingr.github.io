@@ -13,10 +13,10 @@
       <style type="text/css">
       
           #header {
-            background-color: dark grey;
+            background-color: black;
             height: 50px;
             font-family: monospace;
-            font-color: light grey;
+            font-color: light green;
             font-size: 40px;
             
           }
@@ -24,6 +24,7 @@
           #controls {
             background-color: grey;
             height: 200px;
+            font-size: 16px;
           }
           
           #log {
@@ -44,8 +45,8 @@
           .heading {
             font-size: 22px;
             font-family: sans-serif;
-            font-color: white;
-            background-color: crimson;
+            font-color: green;
+            background-color: black;
           }
       
       </style>
@@ -57,8 +58,8 @@
         <div id="controls">
             
             <div class="heading">Alias</div>
-            Alias: <input class="textBox" id="alias" maxLength="50" name="alias" placeholder="Name to display in the roll log">
-            Dice color: <input type="color" name="diceColor"
+            Alias: <input class="textBox" id="alias" maxLength="50" name="alias" placeholder="Name to display in the roll log"><br>
+            Dice Color: <input type="color" name="diceColor"
             
             
             <div class="heading">Roll Description</div>
