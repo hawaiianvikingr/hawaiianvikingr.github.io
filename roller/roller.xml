@@ -16,15 +16,16 @@
             background-color: black;
             height: 50px;
             font-family: monospace;
-            font-color: light green;
+            color: light green;
             font-size: 40px;
             
           }
           
           #controls {
-            background-color: grey;
+            background-color: dark grey;
             height: 200px;
-            font-size: 16px;
+            font-size: 18px;
+            color: white;
           }
           
           #log {
@@ -45,7 +46,7 @@
           .heading {
             font-size: 22px;
             font-family: sans-serif;
-            font-color: green;
+            color: green;
             background-color: black;
           }
       
