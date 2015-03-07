@@ -31,7 +31,7 @@
             height:300px;
           }
           
-          .button{
+          input.button{
             background-color: light blue;
             height: 30px;
             width: 30px;
@@ -54,20 +54,14 @@
       
       <body>
       
-        //Contains title info for the extension
-        <div id="header">
-            roller
-        </div>
+        <div id="header">roller</div>
         
-        //Contains the buttons and controls
         <div id="controls">
-            <h3>Controls</h3>
-            
-            <h3>Header</h3>
             
             <div class="heading">Alias</div>
             <input class="textBox" id="alias" maxLength="50" name="alias" placeholder="Alias">
             
+            <div class="heading">Roll</div>
             <div class="button">
                 -2
             </div>
