@@ -31,7 +31,7 @@
             height:300px;
           }
           
-          input.button{
+          input.rollButton{
           }
           
           .entry {
@@ -39,6 +39,13 @@
             background-color: white;
             font-family: sans-serif;
             border: 2px solid grey;
+          }
+          
+          .heading {
+            font-size: 22px;
+            font-family: sans-serif;
+            font-color: white;
+            background-color: crimson;
           }
       
       </style>
@@ -50,7 +57,12 @@
         <div id="controls">
             
             <div class="heading">Alias</div>
-            <input class="textBox" id="alias" maxLength="50" name="alias" placeholder="Alias">
+            <input class="textBox" id="alias" maxLength="50" name="alias" placeholder="Name to display in the roll log">
+            
+            <div class="heading">Roll Description</div>
+            <input class="textBox" id="description" maxLength="50" name="description" placeholder="A description of the roll">
+            
+            <input type="color" name="diceColor"
             
             <div class="heading">Roll</div>
             <input class="rollButton" id="minus2" name="minus2" title="-1" type="submit" value="-2">
