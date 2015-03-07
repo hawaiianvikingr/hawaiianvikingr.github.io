@@ -23,7 +23,7 @@
           
           #controls {
             background-color: dark grey;
-            height: 200px;
+            height: 300px;
             font-size: 18px;
             color: white;
           }
