@@ -62,29 +62,16 @@
             <input class="textBox" id="alias" maxLength="50" name="alias" placeholder="Alias">
             
             <div class="heading">Roll</div>
-            <div class="button">
-                -2
-            </div>
-            
-            <div class="button">
-                -1
-            </div>
-            
-            <div class="button">
-                +0
-            </div>
-            
-            <div class="button">
-                +1
-            </div>
-            
-            <input class="button" id="plus2" name="plus2" title="+2" type="submit" value="+2">
+            <input class="rollButton" id="minus2" name="minus2" title="-1" type="submit" value="+2">
+            <input class="rollButton" id="minus1" name="minus1" title="-1" type="submit" value="+2">
+            <input class="rollButton" id="plus0" name="plus0" title="+0" type="submit" value="+2">
+            <input class="rollButton" id="plus1" name="plus1" title="+1" type="submit" value="+2">
+            <input class="rollButton" id="plus2" name="plus2" title="+2" type="submit" value="+2">
             
         </div>
         
-        //Displays roll results and chat log?
+        <div class="heading">Log</div>
         <div id="log">
-            <h3>Log</h3>
         </div>
       
         <script language="javascript" type="text/javascript">
