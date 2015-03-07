@@ -57,12 +57,12 @@
         <div id="controls">
             
             <div class="heading">Alias</div>
-            <input class="textBox" id="alias" maxLength="50" name="alias" placeholder="Name to display in the roll log">
+            Alias: <input class="textBox" id="alias" maxLength="50" name="alias" placeholder="Name to display in the roll log">
+            Dice color: <input type="color" name="diceColor"
+            
             
             <div class="heading">Roll Description</div>
             <input class="textBox" id="description" maxLength="50" name="description" placeholder="A description of the roll">
-            
-            <input type="color" name="diceColor"
             
             <div class="heading">Roll</div>
             <input class="rollButton" id="minus2" name="minus2" title="-1" type="submit" value="-2">
