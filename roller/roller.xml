@@ -32,15 +32,6 @@
           }
           
           input.button{
-            background-color: light blue;
-            height: 30px;
-            width: 30px;
-            font-family: sans-serif;
-            font-size: 18px;
-            margin: 5px;
-            border-radius: 5px;
-            border: 2px solid black;
-            display: inline-block;
           }
           
           .entry {
@@ -62,10 +53,10 @@
             <input class="textBox" id="alias" maxLength="50" name="alias" placeholder="Alias">
             
             <div class="heading">Roll</div>
-            <input class="rollButton" id="minus2" name="minus2" title="-1" type="submit" value="+2">
-            <input class="rollButton" id="minus1" name="minus1" title="-1" type="submit" value="+2">
-            <input class="rollButton" id="plus0" name="plus0" title="+0" type="submit" value="+2">
-            <input class="rollButton" id="plus1" name="plus1" title="+1" type="submit" value="+2">
+            <input class="rollButton" id="minus2" name="minus2" title="-1" type="submit" value="-2">
+            <input class="rollButton" id="minus1" name="minus1" title="-1" type="submit" value="-1">
+            <input class="rollButton" id="plus0" name="plus0" title="+0" type="submit" value="+0">
+            <input class="rollButton" id="plus1" name="plus1" title="+1" type="submit" value="+1">
             <input class="rollButton" id="plus2" name="plus2" title="+2" type="submit" value="+2">
             
         </div>
