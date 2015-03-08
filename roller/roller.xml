@@ -26,6 +26,7 @@
             font-family: monospace;
             color: chartreuse;
             font-size: 40px;
+            display: inline-block;
           }
           
           
