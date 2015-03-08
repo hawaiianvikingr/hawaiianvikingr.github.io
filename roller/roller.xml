@@ -12,7 +12,7 @@
       
       <style type="text/css">
       
-          #header {
+          #tabs {
             background-color: black;
             height: 50px;
             font-family: monospace;
@@ -21,6 +21,14 @@
             
           }
           
+          .tab {
+            height: 50px;
+            font-family: monospace;
+            color: chartreuse;
+            font-size: 40px;
+          }
+          
+          
           #controls {
             background-color: dimGray;
             height: 200px;
@@ -28,12 +36,20 @@
             color: white;
           }
           
-          #log {
-            background-color: #eeeeee;
-            height:300px;
+          .heading {
+            font-size: 22px;
+            font-family: sans-serif;
+            color: green;
+            background-color: black;
           }
           
           input.rollButton{
+          }
+          
+          
+          #log {
+            background-color: #eeeeee;
+            height:300px;
           }
           
           .entry {
@@ -43,18 +59,16 @@
             border: 2px solid grey;
           }
           
-          .heading {
-            font-size: 22px;
-            font-family: sans-serif;
-            color: green;
-            background-color: black;
-          }
       
       </style>
       
       <body>
       
-        <div id="header">roller</div>
+        <div id="tabs">
+            <div id="logTab" class="tab">L</div>
+            <div id="charSheetTab" class="tab">C</div>
+            <div id="settingsTab" class="tab">S</div>
+        </div>
         
         <div id="controls">
             
@@ -81,8 +95,14 @@
       
         <script language="javascript" type="text/javascript">
         
-        //Wait for the gadget to load
-        gadgets.util.registerOnLoadHandler(init);
+        
+        //register the API callback
+        gapi.hangout.onApiReady.add(function(eventObj){
+          if (eventObj.isApiReady) {
+            gadgets.util.registerOnLoadHandler(init);
+          }
+        });
+        
         
         // Function to initialize the extension
         function init () {
