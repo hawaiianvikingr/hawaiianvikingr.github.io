@@ -7,6 +7,7 @@
   <Content type="html">
     <![CDATA[
       <script src="//plus.google.com/hangouts/_/api/v1/hangout.js"></script>
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
       
       <html>
       
@@ -37,7 +38,10 @@
                 background-color: dimgray;
                 color: springgreen;
                 font-family: sans-serif;
-                border: 2px solid black;
+                border: 2px solid white;
+                position: absolute;
+                left: 0px;
+                top: 0px;
               }
               
               .heading {
@@ -127,7 +131,31 @@
         
         // Function to initialize the extension
         function init () {
-        
+            var $roll = $('#roll');
+            var $charSheet = $('#charSheet');
+            var $settings = $('#settings');
+            
+            var $rollTab = $('#rollTab');
+            var $charSheetTab = $('#charSheetTab);
+            var $settingsTab = $('#settingsTab);
+            
+            $rollTab.click(function() {
+                $roll.css("z-index", 1 );
+                $charSheet.css("z-index", 0.5);
+                $settings.css("z-index", 0.5);
+            });
+            
+            $charSheetTab.click(function() {
+                $roll.css("z-index", 0.5 );
+                $charSheet.css("z-index", 1);
+                $settings.css("z-index", 0.5);
+            });
+            
+            $settingsTab.click(function() {
+                $roll.css("z-index", 0.5 );
+                $charSheet.css("z-index", 0.5);
+                $settings.css("z-index", 1);
+            });
         }
         
         </script>
