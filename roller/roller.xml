@@ -29,36 +29,54 @@
             display: inline-block;
           }
           
-          
-          #controls {
-            background-color: dimGray;
-            height: 200px;
-            font-size: 18px;
-            color: white;
+          #contentContainer{
           }
           
-          .heading {
-            font-size: 22px;
-            font-family: sans-serif;
-            color: green;
-            background-color: black;
-          }
-          
-          input.rollButton{
-          }
-          
-          
-          #log {
-            background-color: #eeeeee;
-            height:300px;
-          }
-          
-          .entry {
-            height: 50px;
-            background-color: white;
-            font-family: sans-serif;
-            border: 2px solid grey;
-          }
+              .content{
+                height: 400px;
+                background-color: dimgray;
+                color: springgreen;
+                font-family: sans-serif;
+                border: 2px solid black;
+              }
+              
+              .heading {
+                font-size: 22px;
+                font-family: monospace;
+                color: green;
+                background-color: black;
+              }
+              
+              #roll {
+              }
+              
+                  #controls{
+                  }
+                  
+                    input.rollButton{
+                    }
+              
+                  #log {
+                    background-color: #eeeeee;
+                    height:300px;
+                  }
+                  
+                      .entry {
+                        height: 50px;
+                        background-color: white;
+                        font-family: sans-serif;
+                        border: 2px solid grey;
+                      }
+                  
+              #charSheet {
+                background-color: dimGray;
+                height: 200px;
+                font-size: 18px;
+                color: white;
+              }
+              
+              #settings {
+              }
           
       
       </style>
@@ -66,36 +84,38 @@
       <body>
       
         <div id="tabs">
-            <div id="logTab" class="tab">L</div>
+            <div id="rollTab" class="tab">L</div>
             <div id="charSheetTab" class="tab">C</div>
             <div id="settingsTab" class="tab">S</div>
         </div>
         
-        <div id="controls">
-            
-            <div class="heading">Alias</div>
-            Alias: <input class="textBox" id="alias" maxLength="50" name="alias" placeholder="Name to display in the roll log"><br>
-            Dice Color: <input type="color" name="diceColor"
-            
-            
-            <div class="heading">Roll Description</div>
-            <input class="textBox" id="description" maxLength="50" name="description" placeholder="A description of the roll">
-            
-            <div class="heading">Roll</div>
-            <input class="rollButton" id="minus2" name="minus2" title="-1" type="submit" value="-2">
-            <input class="rollButton" id="minus1" name="minus1" title="-1" type="submit" value="-1">
-            <input class="rollButton" id="plus0" name="plus0" title="+0" type="submit" value="+0">
-            <input class="rollButton" id="plus1" name="plus1" title="+1" type="submit" value="+1">
-            <input class="rollButton" id="plus2" name="plus2" title="+2" type="submit" value="+2">
-            
-        </div>
+        <div id="contentContainer">
         
-        <div class="heading">Log</div>
-        <div id="log">
+            <div id="roll" class="content">
+                <div class="heading">Roll Description</div>
+                <input class="textBox" id="description" maxLength="50" name="description" placeholder="A description of the roll">
+                
+                <div class="heading">Roll</div>
+                <input class="rollButton" id="minus2" name="minus2" title="-1" type="submit" value="-2">
+                <input class="rollButton" id="minus1" name="minus1" title="-1" type="submit" value="-1">
+                <input class="rollButton" id="plus0" name="plus0" title="+0" type="submit" value="+0">
+                <input class="rollButton" id="plus1" name="plus1" title="+1" type="submit" value="+1">
+                <input class="rollButton" id="plus2" name="plus2" title="+2" type="submit" value="+2">
+            </div>
+            
+            <div id="charSheet" class="content">
+                <div class="heading">Alias</div>
+                Alias: <input class="textBox" id="alias" maxLength="50" name="alias" placeholder="Name to display in the roll log"><br>
+                Dice Color: <input type="color" name="diceColor"
+            </div>
+            
+            <div id="settings" class="content">
+            </div>
         </div>
       
+      
+      
         <script language="javascript" type="text/javascript">
-        
         
         //register the API callback
         gapi.hangout.onApiReady.add(function(eventObj){
